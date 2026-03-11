@@ -1,0 +1,42 @@
+.planoroxoclaro{
+    width: max;
+    height: 10%;
+    background-color: rgb(125, 18, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.planoroxoescuro{
+    width: max;
+    height: 5%;
+    background-color: rgb(180, 30, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.promocoes{
+    background-color: rgb(136, 28, 176);
+    width: max;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quad1{
+    margin: 1%;
+    background-color: grey;
+    padding: 4%;
+}
+.quad2{
+    margin: 1%;
+    background-color: grey;
+    padding: 4%;
+}.quad3{
+    margin: 1%;
+    background-color: grey;
+    padding: 4%;
+}.quad4{
+    margin: 1%;
+    background-color: grey;
+    padding: 4%;
+}
