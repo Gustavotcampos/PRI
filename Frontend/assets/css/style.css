@@ -2,9 +2,10 @@ body {
     margin: 0;
     padding: 0;
 }
+/*Div do topo*/
 .planoroxoclaro{
     width: max;
-    height: 2em;
+    height: max;
     background-color: rgb(125, 18, 135);
     display: flex;
     justify-content: center;
@@ -12,6 +13,28 @@ body {
     gap: 7em;
     flex-direction: row;
 }
+.login{
+height: max-content;
+width: max-content;
+justify-content: center;
+display: flex;
+color: white;
+}
+.login:hover{
+    background-color: rgb(53, 0, 65);
+}
+.carrinho{
+    color: white;
+}
+.carrinho:hover{
+background-color: rgb(53, 0, 65);
+}
+.marca{
+    color: white;
+}
+/*------------------------------------------------*/
+
+/*Segunda div*/
 .planoroxoescuro{
     width: max;
     height: 1.5em;
@@ -20,7 +43,45 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    gap: 5em;
 }
+.informatica{
+    color: white;
+    padding: max-content;
+    width: max-content;
+    height: max-content;
+}
+.informatica:hover{
+    background-color: rgb(142, 26, 168);
+}
+.moda{
+    color: white;
+    padding: max-content;
+    width: max-content;
+    height: max-content;
+}
+.moda:hover{
+    background-color: rgb(142, 26, 168);
+}
+.casa{
+    color: white;
+    padding: max-content;
+    width: max-content;
+    height: max-content;
+}
+.casa:hover{
+        background-color: rgb(142, 26, 168);
+}
+.musica{
+        color: white;
+    padding: max-content;
+    width: max-content;
+    height: max-content;
+}
+.musica:hover{
+        background-color: rgb(142, 26, 168);
+}
+/*-------------------------------------------------*/
 .promocoes{
     background-color: rgb(136, 28, 176);
     width: max;
@@ -54,6 +115,7 @@ body {
     align-items: center;
     display: flex;
     height: 1em;
+    color: black;
 }
 .purpleline{
     width: max;
@@ -92,14 +154,4 @@ body {
 .miniquad6{
         padding: 2em;
     background-color: grey;
-}
-.login{
-    height: max-content;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-
-}
-.login:hover{
-    background-color: rgb(53, 0, 65);
 }
