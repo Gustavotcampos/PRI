@@ -1,42 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 .planoroxoclaro{
     width: max;
-    height: 10%;
+    height: 2em;
     background-color: rgb(125, 18, 135);
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 7em;
+    flex-direction: row;
 }
 .planoroxoescuro{
     width: max;
-    height: 5%;
+    height: 1.5em;
     background-color: rgb(180, 30, 213);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 .promocoes{
     background-color: rgb(136, 28, 176);
     width: max;
-    height: 20%;
+    height: 12em;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2em;
+    flex-direction: row;
 }
 .quad1{
-    margin: 1%;
+
     background-color: grey;
-    padding: 4%;
+    padding: 3.2em;
 }
 .quad2{
-    margin: 1%;
+
     background-color: grey;
-    padding: 4%;
+    padding: 3.2em;
 }.quad3{
-    margin: 1%;
+
     background-color: grey;
-    padding: 4%;
+    padding: 3.2em;
 }.quad4{
-    margin: 1%;
+
     background-color: grey;
-    padding: 4%;
+    padding: 3.2em;
+}
+.desc{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 1em;
+}
+.purpleline{
+    width: max;
+    height: 5px;
+    background-color: blueviolet;
+}
+.prod{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 12em;
+    width: max;
+    align-items: center;
+    gap: 1em;
+}
+.miniquad1{
+    padding: 2em;
+    background-color: grey;
+}
+.miniquad2{
+        padding: 2em;
+    background-color: grey;
+}
+.miniquad3{
+        padding: 2em;
+    background-color: grey;
+}
+.miniquad4{
+        padding: 2em;
+    background-color: grey;
+}
+.miniquad5{
+        padding: 2em;
+    background-color: grey;
+}
+.miniquad6{
+        padding: 2em;
+    background-color: grey;
+}
+.login{
+    height: max-content;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+.login:hover{
+    background-color: rgb(53, 0, 65);
 }
