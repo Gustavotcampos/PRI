@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-p{
-      font-family: "Roboto", sans-serif;
-}
 
 body {
     margin: 0;
@@ -20,11 +17,14 @@ body {
     flex-direction: row;
 }
 .login{
-height: max-content;
-width: max-content;
+height: 2.2em;
+width: 4em;
 justify-content: center;
+align-items: center;
 display: flex;
 color: white;
+font-family:  "Roboto", sans-serif;
+border-radius: 7px;
 }
 .login:hover{
     background-color: rgb(53, 0, 65);
@@ -32,6 +32,14 @@ color: white;
 }
 .carrinho{
     color: white;
+    height: 2.2em;
+    width: 7em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-family:  "Roboto", sans-serif;
+    border-radius: 7px;
 }
 .carrinho:hover{
 background-color: rgb(53, 0, 65);
@@ -55,9 +63,13 @@ cursor: pointer;
 }
 .informatica{
     color: white;
-    padding: max-content;
-    width: max-content;
-    height: max-content;
+    width: 6em;
+    height: 1.5em;
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
 }
 .informatica:hover{
     background-color: rgb(142, 26, 168);
@@ -66,8 +78,13 @@ cursor: pointer;
 .moda{
     color: white;
     padding: max-content;
-    width: max-content;
-    height: max-content;
+    width: 3.5em;
+    height: 1.5em;
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
 }
 .moda:hover{
     background-color: rgb(142, 26, 168);
@@ -76,18 +93,28 @@ cursor: pointer;
 .casa{
     color: white;
     padding: max-content;
-    width: max-content;
-    height: max-content;
+    width: 3em;
+    height: 1.5em;
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
 }
 .casa:hover{
         background-color: rgb(142, 26, 168);
         cursor: pointer;
 }
 .musica{
-        color: white;
+    color: white;
     padding: max-content;
-    width: max-content;
-    height: max-content;
+    width: 4em;
+    height: 1.5em;
+     font-family: "Roboto", sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
 }
 .musica:hover{
         background-color: rgb(142, 26, 168);
@@ -146,6 +173,7 @@ cursor: pointer;
     display: flex;
     height: 1em;
     color: black;
+    font-family: "Roboto", sans-serif;
 }
 .purpleline{
     width: max;
