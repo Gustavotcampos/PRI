@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+p{
+      font-family: "Roboto", sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -88,6 +94,8 @@ cursor: pointer;
         cursor: pointer;
 }
 /*-------------------------------------------------*/
+
+/*Terceira div*/
 .promocoes{
     background-color: rgb(136, 28, 176);
     width: max;
@@ -99,23 +107,39 @@ cursor: pointer;
     flex-direction: row;
 }
 .quad1{
-
     background-color: grey;
     padding: 3.2em;
 }
+.quad1:hover{
+    cursor: pointer;
+}
+
 .quad2{
-
-    background-color: grey;
-    padding: 3.2em;
-}.quad3{
-
-    background-color: grey;
-    padding: 3.2em;
-}.quad4{
-
     background-color: grey;
     padding: 3.2em;
 }
+.quad2:hover{
+    cursor: pointer;
+}
+
+.quad3{
+    background-color: grey;
+    padding: 3.2em;
+}
+.quad3:hover{
+    cursor: pointer;
+}
+
+.quad4{
+    background-color: grey;
+    padding: 3.2em;
+}
+.quad4:hover{
+    cursor: pointer;
+}
+/*------------------------------------------*/
+
+/*Descobertas e a linha roxa*/
 .desc{
     justify-content: center;
     align-items: center;
@@ -128,6 +152,9 @@ cursor: pointer;
     height: 5px;
     background-color: blueviolet;
 }
+/*-------------------------------------------*/
+
+/*Última div*/
 .prod{
     display: flex;
     flex-direction: row;
@@ -141,23 +168,50 @@ cursor: pointer;
     padding: 2em;
     background-color: grey;
 }
+.miniquad1:hover{
+    cursor: pointer;
+}
+
 .miniquad2{
         padding: 2em;
     background-color: grey;
 }
+.miniquad2:hover{
+    cursor: pointer;
+}
+
+
 .miniquad3{
         padding: 2em;
     background-color: grey;
 }
+.miniquad3:hover{
+    cursor: pointer;
+}
+
+
 .miniquad4{
         padding: 2em;
     background-color: grey;
 }
+.miniquad4:hover{
+    cursor: pointer;
+}
+
+
 .miniquad5{
         padding: 2em;
     background-color: grey;
 }
+.miniquad5:hover{
+    cursor: pointer;
+}
+
+
 .miniquad6{
         padding: 2em;
     background-color: grey;
+}
+.miniquad6:hover{
+    cursor: pointer;
 }
