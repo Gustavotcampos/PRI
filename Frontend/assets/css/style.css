@@ -22,12 +22,14 @@ color: white;
 }
 .login:hover{
     background-color: rgb(53, 0, 65);
+    cursor: pointer;
 }
 .carrinho{
     color: white;
 }
 .carrinho:hover{
 background-color: rgb(53, 0, 65);
+cursor: pointer;
 }
 .marca{
     color: white;
@@ -53,6 +55,7 @@ background-color: rgb(53, 0, 65);
 }
 .informatica:hover{
     background-color: rgb(142, 26, 168);
+    cursor: pointer;
 }
 .moda{
     color: white;
@@ -62,6 +65,7 @@ background-color: rgb(53, 0, 65);
 }
 .moda:hover{
     background-color: rgb(142, 26, 168);
+    cursor: pointer;
 }
 .casa{
     color: white;
@@ -71,6 +75,7 @@ background-color: rgb(53, 0, 65);
 }
 .casa:hover{
         background-color: rgb(142, 26, 168);
+        cursor: pointer;
 }
 .musica{
         color: white;
@@ -80,6 +85,7 @@ background-color: rgb(53, 0, 65);
 }
 .musica:hover{
         background-color: rgb(142, 26, 168);
+        cursor: pointer;
 }
 /*-------------------------------------------------*/
 .promocoes{
@@ -129,7 +135,7 @@ background-color: rgb(53, 0, 65);
     height: 12em;
     width: max;
     align-items: center;
-    gap: 1em;
+    gap: 4em;
 }
 .miniquad1{
     padding: 2em;
