@@ -4,6 +4,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color:black;
 }
 /*Div do topo*/
 .planoroxoclaro{
@@ -133,37 +134,26 @@ cursor: pointer;
     gap: 2em;
     flex-direction: row;
 }
-.quad1{
-    background-color: grey;
-    padding: 3.2em;
-}
-.quad1:hover{
-    cursor: pointer;
-}
-
-.quad2{
-    background-color: grey;
-    padding: 3.2em;
-}
-.quad2:hover{
-    cursor: pointer;
+.quad{
+    background-color: purple;
+    border-radius: 10px;
+    width: 3.2em;
+    height: 3.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
 }
 
-.quad3{
-    background-color: grey;
-    padding: 3.2em;
-}
-.quad3:hover{
+.quad:hover{
     cursor: pointer;
+}
+.imgpromo{
+    width: 6.2em;
+    height: 6.2em;
+    border-radius: 10px;
 }
 
-.quad4{
-    background-color: grey;
-    padding: 3.2em;
-}
-.quad4:hover{
-    cursor: pointer;
-}
 /*------------------------------------------*/
 
 /*Descobertas e a linha roxa*/
@@ -171,75 +161,62 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     display: flex;
-    height: 1em;
+    flex-direction: column;
+    width: max;
+    height: auto;
+    background-color: white;
+    font-family:  "Roboto", sans-serif;
+}
+.textodades{
     color: black;
-    font-family: "Roboto", sans-serif;
+    width: max-content;
 }
 .purpleline{
     width: max;
-    height: 5px;
-    background-color: blueviolet;
+    padding: 1px;
+    height: 2px;
+    background-color: rgb(86, 3, 163);
 }
 /*-------------------------------------------*/
 
 /*Última div*/
+
 .prod{
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    height: 12em;
+    height: max;
     width: max;
-    align-items: center;
     gap: 4em;
+    margin-top: 1em;
+    flex-wrap: wrap;
 }
-.miniquad1{
-    padding: 2em;
-    background-color: grey;
+.miniquad{
+    padding: 0.5em;
+    background-color:white;
+    border-radius: 8px;
+    border: solid rgb(180, 30, 213);
+    width: 10em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
-.miniquad1:hover{
+.miniquad:hover{
     cursor: pointer;
 }
-
-.miniquad2{
-        padding: 2em;
-    background-color: grey;
+.preco{
+    padding:0.5em;
+    font-size: 1.2em;
+    margin-left: -5em;
 }
-.miniquad2:hover{
-    cursor: pointer;
+.nome{
+    font-size: 1.5em;
+    margin-left: -3.5em;
 }
-
-
-.miniquad3{
-        padding: 2em;
-    background-color: grey;
-}
-.miniquad3:hover{
-    cursor: pointer;
-}
-
-
-.miniquad4{
-        padding: 2em;
-    background-color: grey;
-}
-.miniquad4:hover{
-    cursor: pointer;
-}
-
-
-.miniquad5{
-        padding: 2em;
-    background-color: grey;
-}
-.miniquad5:hover{
-    cursor: pointer;
-}
-
-
-.miniquad6{
-        padding: 2em;
-    background-color: grey;
-}
-.miniquad6:hover{
-    cursor: pointer;
+.imgprod{
+    border-radius: 10px;
+    height: 8.2em;
+    width: 8.2em;
 }
