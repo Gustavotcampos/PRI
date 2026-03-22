@@ -198,8 +198,6 @@ cursor: pointer;
     border-radius: 8px;
     border: solid rgb(180, 30, 213);
     width: 10em;
-    justify-content: center;
-    align-items: center;
     display: flex;
     flex-direction: column;
 }
@@ -207,16 +205,18 @@ cursor: pointer;
     cursor: pointer;
 }
 .preco{
-    padding:0.5em;
     font-size: 1.2em;
-    margin-left: -5em;
 }
 .nome{
     font-size: 1.5em;
-    margin-left: -3.5em;
 }
 .imgprod{
     border-radius: 10px;
     height: 8.2em;
     width: 8.2em;
+}
+.imagemprod{
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
