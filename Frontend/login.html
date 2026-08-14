@@ -1,60 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <style>
- 
-        body{
-            width: auto;
-            height: auto;
-            margin: 0;
-            padding: 0;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+        <style>
 
+            html,body{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+.agrupa{
+    overflow: auto;
+    height: 100%;
+}
         .login{
             background-color: blueviolet;
+            overflow: auto;
         }
         .branca{
-            background-color: aqua;
+            background-color: black;
         }
         .roxo-escuro{
             background-color: rgb(78, 1, 150);
         } 
-        .texto{
+        .botao{
             background-color: purple;
+            text-decoration: none;
         }
+.texto{
+    background-color: white;
+
+}
+
         
     </style>
-</head>
-<body>
-    <div class="agrupa container mw-100 mh-auto d-flex flex-row-reverse justify-content-center align-items-center">
-        <div class="login d-flex justify-content-center container mw-auto mh-auto p-5">
-            <div class="preencher justify-content-center p-5">
-                <div class="roxo-escuro container mh-auto mw-auto p-0 py-5 d-flex m-1 justify-content-center flex-column">
-                    <form action="">
-                    <div class="cinza m-2 container mw-auto rounded-5"><input type="text" id="lugar1" name="lugar1" placeholder="X"></div>
-                    <div class="cinza m-2 container mw-auto"><input type="text" id="lugar1" name="lugar1" placeholder="X"></div>
-                    <div class="cinza m-2 container mw-auto"><input type="text" id="lugar1" name="lugar1" placeholder="X"></div>
-                    <div class="cinza m-2 container mw-auto"><input type="text" id="lugar1" name="lugar1" placeholder="X"></div>
-                    <div class="cinza m-2 container mw-auto"><input type="text" id="lugar1" name="lugar1" placeholder="X"></div>
-                    <button class="botao justify-content-center align-items-center d-flex ">
-                    <div class="texto container rounded-3 d-flex justify-content-center align-items-center">
-                        <p>Confirmar</p>
-                    </div>
-                    </button>
-                </div>
+    </head>
+    <body>
+        <div
+            class="agrupa mw-auto mh-auto d-flex flex-row-reverse justify-content-center align-items-center ">
+            <div
+                class="login d-flex justify-content-center container w-50 h-100 p-5">
+                <div class="preencher justify-content-center p-5">
+                    <div class="m-1">
+                    <div
+                        class="roxo-escuro d-flex container mh-50 mw-auto p-0 py-5 d-flex m-1 justify-content-center ">
+                        <form action>
+                            <div class="justify-content-center">
+                                <div
+                                    class="cinza m-2 container mw-auto rounded-5"><input
+                                         type="text" id="lugar1" name="lugar1"
+                                        placeholder="X"></div>
+                                <div class="cinza m-2 container mw-auto"><input
+                                        type="text" id="lugar1" name="lugar1"
+                                        placeholder="X"></div>
+                                <div class="cinza m-2 container mw-auto"><input
+                                        type="text" id="lugar1" name="lugar1"
+                                        placeholder="X"></div>
+                                <div class="cinza m-2 container mw-auto"><input
+                                        type="text" id="lugar1" name="lugar1"
+                                        placeholder="X"></div>
+                                <div class="cinza m-2 container mw-auto"><input
+                                        type="text" id="lugar1" name="lugar1"
+                                        placeholder="X"></div>
+                            </div>
+                            <div class="justify-content-center d-flex align-items-center">
+                                <button
+                                    class="botao justify-content-center align-items-center d-flex w-50 rounded-3 "
+                                    type="submit">
+                                    <p>Cadastrar</p>
+                                </button>
+                            </div>
+                        </div>
                     </form>
 
+                </div>
+                </div>
+            </div>
+            <div
+                class="branca d-flex container w-50 justify-content-center align-items-center p-2 h-100">
+                <div class="insira w-auto h-auto p-5 shadow d-flex flex-wrap p2">
+                    <p class="texto fs-3 d-flex align-self-center py-5 ">Insira suas informações para criar sua conta</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="branca d-flex container mw-auto h-auto justify-content-center align-items-center p-0 p-md-4">
-            <div class="insira w-auto h-auto p-5">
-                <p>Insira suas informações</p>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
