@@ -28,6 +28,10 @@ font-family:  "Roboto", sans-serif;
     background-color: rgb(53, 0, 65);
     cursor: pointer;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
 .carrinho{
     color: white;
     font-family:  "Roboto", sans-serif;
@@ -38,6 +42,8 @@ cursor: pointer;
 }
 .marca{
     color: white;
+    width: 180px;
+    height: max-content;
 }
 .Barra_de_pesquisa{
     background-color: rgb(125, 18, 135);
@@ -151,10 +157,10 @@ cursor: pointer;
 </head>
 <body>
     <div class="container mw-100 mh-100 d-flex flex-row flex-wrap justify-content-center align-items-center flex-row gap-5 planoroxoclaro">
-        <div class="marca img-fluid"><img src="" alt="MARKA DA INPREZA"></div>
+        <div class="img-fluid"><img class="marca" src="assets/img/ChatGPT Image 20 de ago. de 2026, 11_39_44.png" alt="MARKA DA INPREZA"></div>
         <div class="form-control h-auto w-auto p-1 Barra_de_pesquisa">
             <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquisar"></div>
-        <div class="login justify-content-center align-items-center d-flex rounded p-2 m-2">Login</div>
+        <div class="login justify-content-center align-items-center d-flex rounded p-2 m-2"><a href="login.html">Login</a></div>
         <div class="carrinho justify-content-center align-items-center d-flex rounded p-1 m-2"><p>Meu carrinho</p></div>
     </div>
     <div class="container planoroxoescuro mw-100 h-auto d-flex justify-content-center align-items-center flex-wrap flex-row gap-5">
