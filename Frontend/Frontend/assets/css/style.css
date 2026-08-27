@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:black;
+}
+/*Div do topo*/
+.planoroxoclaro{
+    width: max;
+    height: max;
+    background-color: rgb(125, 18, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7em;
+    flex-direction: row;
+}
+.login{
+height: 2.2em;
+width: 4em;
+justify-content: center;
+align-items: center;
+display: flex;
+color: white;
+font-family:  "Roboto", sans-serif;
+border-radius: 7px;
+}
+.login:hover{
+    background-color: rgb(53, 0, 65);
+    cursor: pointer;
+}
+.carrinho{
+    color: white;
+    height: 2.2em;
+    width: 7em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-family:  "Roboto", sans-serif;
+    border-radius: 7px;
+}
+.carrinho:hover{
+background-color: rgb(53, 0, 65);
+cursor: pointer;
+}
+.marca{
+    color: white;
+}
+/*------------------------------------------------*/
+
+/*Segunda div*/
+.planoroxoescuro{
+    width: max;
+    height: 1.5em;
+    background-color: rgb(180, 30, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5em;
+}
+.informatica{
+    color: white;
+    width: 6em;
+    height: 1.5em;
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+}
+.informatica:hover{
+    background-color: rgb(142, 26, 168);
+    cursor: pointer;
+}
+.moda{
+    color: white;
+    padding: max-content;
+    width: 3.5em;
+    height: 1.5em;
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+}
+.moda:hover{
+    background-color: rgb(142, 26, 168);
+    cursor: pointer;
+}
+.casa{
+    color: white;
+    padding: max-content;
+    width: 3em;
+    height: 1.5em;
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+}
+.casa:hover{
+        background-color: rgb(142, 26, 168);
+        cursor: pointer;
+}
+.musica{
+    color: white;
+    padding: max-content;
+    width: 4em;
+    height: 1.5em;
+     font-family: "Roboto", sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+}
+.musica:hover{
+        background-color: rgb(142, 26, 168);
+        cursor: pointer;
+}
+/*-------------------------------------------------*/
+
+/*Terceira div*/
+.promocoes{
+    background-color: rgb(136, 28, 176);
+    width: max;
+    height: 12em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    flex-direction: row;
+}
+.quad{
+    background-color: purple;
+    border-radius: 10px;
+    width: 3.2em;
+    height: 3.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.quad:hover{
+    cursor: pointer;
+}
+.imgpromo{
+    width: 6.2em;
+    height: 6.2em;
+    border-radius: 10px;
+}
+
+/*------------------------------------------*/
+
+/*Descobertas e a linha roxa*/
+.desc{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: max;
+    height: auto;
+    background-color: white;
+    font-family:  "Roboto", sans-serif;
+}
+.textodades{
+    color: black;
+    width: max-content;
+}
+.purpleline{
+    width: max;
+    padding: 1px;
+    height: 2px;
+    background-color: rgb(86, 3, 163);
+}
+/*-------------------------------------------*/
+
+/*Última div*/
+
+.prod{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: max;
+    width: max;
+    gap: 4em;
+    margin-top: 1em;
+    flex-wrap: wrap;
+}
+.miniquad{
+    padding: 0.5em;
+    background-color:white;
+    border-radius: 8px;
+    border: solid rgb(180, 30, 213);
+    width: 10em;
+    display: flex;
+    flex-direction: column;
+}
+.miniquad:hover{
+    cursor: pointer;
+}
+.preco{
+    font-size: 1.2em;
+}
+.nome{
+    font-size: 1.5em;
+}
+.imgprod{
+    border-radius: 10px;
+    height: 8.2em;
+    width: 8.2em;
+}
+.imagemprod{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
