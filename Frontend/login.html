@@ -35,15 +35,18 @@
         a{
             color: white
         }
+        .pointer{
+            cursor: pointer;
+        }
         
         
     </style>
     </head>
     <body>
         <div
-            class="agrupa w-100 d-flex flex-column flex-md-row-reverse justify-content-center align-items-center">
+            class="agrupa w-100 d-flex flex-column-reverse flex-md-row-reverse justify-content-center align-items-center">
             <div
-                class="login d-flex justify-content-center container w-100 h-100 align-items-center flex-wrap">
+                class="login d-flex justify-content-center container w-100 h-100 align-items-center flex-wrap" id="preencher_conta">
                 <div class="preencher justify-content-center align-items-center">
                     <div class="m-1 d-flex align-items-center justify-content-center p-2">
                     <div
@@ -74,7 +77,7 @@
                                     <p>Cadastrar</p>
                                 </button>
                             </div>
-                             <p class="d-flex justify-content-center align-items-center"><a class="d-flex justify-content-center" href="">Já possui uma conta?</a></p>
+                             <p class="text-white pointer d-flex justify-content-center align-items-center" id="alternar_criar">Já possui uma conta?</p>
                         </div>
                     </form>
 
@@ -89,5 +92,7 @@
                 </div>
             </div>
         </div>
+        <script src="/Frontend/assets/js/login.js"></script>
     </body>
+    
 </html>
