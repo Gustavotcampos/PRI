@@ -12,7 +12,7 @@ preencher_conta.addEventListener('click', (e) => {
             <div class="preencher justify-content-center align-items-center">
                 <div class="m-1 d-flex align-items-center justify-content-center p-2">
                     <div class="roxo-escuro d-flex container mh-auto w-100 py-5 m-1 justify-content-center">
-                        <form action="">
+                        <form id="form-cadastro">
                             <div class="d-flex flex-column justify-content-center w-auto align-items-center">
                                 <div class="cinza m-2 container mw-auto rounded-5">
                                     <input type="text" id="cad_1" placeholder="X">
@@ -46,7 +46,7 @@ preencher_conta.addEventListener('click', (e) => {
             <div class="preencher justify-content-center align-items-center">
                 <div class="m-1 d-flex align-items-center justify-content-center p-2">
                     <div class="roxo-escuro d-flex container mh-auto w-100 py-5 m-1 justify-content-center">
-                        <form action="">
+                        <form id="form-login">
                             <div class="d-flex flex-column justify-content-center w-auto align-items-center">
                                 <div class="cinza m-2 container mw-auto rounded-5">
                                     <input type="text" id="log_1" placeholder="X">
@@ -66,5 +66,56 @@ preencher_conta.addEventListener('click', (e) => {
                 </div>
             </div>`;
         estado_preencher = 1;
+    }
+});
+
+// Usando delegação de eventos para escutar o submit do cadastro dinâmico
+document.addEventListener('submit', async (e) => {
+    if (e.target && e.target.id === 'form-cadastro') {
+        e.preventDefault();
+
+        const dadosFormulario = {
+            nome: document.getElementById('cad_1').value,
+            email: document.getElementById('cad_2').value,
+            cpf: document.getElementById('cad_3').value,
+            senha: document.getElementById('cad_4').value,
+            confirmarSenha: document.getElementById('cad_5').value
+        };
+
+        if (dadosFormulario.senha !== dadosFormulario.confirmarSenha) {
+            alert('As senhas não coincidem!');
+            return;
+        }
+
+
+        const conexaoCpf = await fetch('/PRI/Backend/src/routes/api.php?classe=verificarCpf', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ cpf: dadosFormulario.cpf })
+        });
+
+        const respostaCpf = await conexaoCpf.json();
+
+        if (respostaCpf.exists) {
+            alert('CPF já cadastrado!');
+            return;
+        } 
+
+
+        const conexaoInsert = await fetch('/PRI/Backend/src/routes/api.php?classe=inserirUsuario', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(dadosFormulario)
+        });
+
+        const respostaInsert = await conexaoInsert.json();
+
+        if (respostaInsert.success) {
+            alert('Cadastro realizado com sucesso!');
+            localStorage.setItem('usuario_nome', respostaInsert.nome);
+            window.location.href = '/PRI/Frontend/index.html';
+        } else {
+            alert('Erro ao realizar o cadastro.');
+        }
     }
 });

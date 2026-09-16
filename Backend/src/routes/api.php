@@ -1,6 +1,4 @@
 <?php
-require_once __DIR__ . '/../config/database.php';
-
 $requisicao = $_GET['classe'];
 
 switch($requisicao){
@@ -9,6 +7,12 @@ switch($requisicao){
         break;
     case 'mostrarprodutos':
         require_once __DIR__ .  '/api_gerarProdutos.php';
+        break;
+    case 'verificarCpf':
+        require_once __DIR__ .  '/api_verificarCpf.php';
+        break;
+    case 'inserirUsuario':
+        require_once __DIR__ .  '/api_inserirUsuario.php';
         break;
 }
 ?>

@@ -1,98 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-            crossorigin="anonymous">
-        <style>
-              @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-            html,body{
-                height: 100%;
-                margin: 0;
-                padding: 0;
-            }
-.agrupa{
-    height: 100%;
-}
-        .login{
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .agrupa {
+            height: 100%;
+        }
+
+        .login {
             background-color: blueviolet;
         }
-        .branca{
+
+        .branca {
             background-color: white;
         }
-        .roxo-escuro{
+
+        .roxo-escuro {
             background-color: rgb(78, 1, 150);
-        } 
-        .botao{
+        }
+
+        .botao {
             background-color: purple;
             text-decoration: none;
         }
-        a{
+
+        a {
             color: white
         }
-        .pointer{
+
+        .pointer {
             cursor: pointer;
         }
-        
-        
     </style>
-    </head>
-    <body>
-        <div
-            class="agrupa w-100 d-flex flex-column-reverse flex-md-row-reverse justify-content-center align-items-center">
-            <div
-                class="login d-flex justify-content-center container w-100 h-100 align-items-center flex-wrap" id="preencher_conta">
-                <div class="preencher justify-content-center align-items-center">
-                    <div class="m-1 d-flex align-items-center justify-content-center p-2">
-                    <div
-                        class="roxo-escuro d-flex container mh-auto w-100 py-5 d-flex m-1 justify-content-center ">
-                        <form action>
+</head>
+
+<body>
+    <div class="agrupa w-100 d-flex flex-column-reverse flex-md-row-reverse justify-content-center align-items-center">
+        <div class="login d-flex justify-content-center container w-100 h-100 align-items-center flex-wrap"
+            id="preencher_conta">
+            <div class="preencher justify-content-center align-items-center">
+                <div class="m-1 d-flex align-items-center justify-content-center p-2">
+                    <div class="roxo-escuro d-flex container mh-auto w-100 py-5 d-flex m-1 justify-content-center ">
+                        <form id="form-cadastro">
                             <div class="d-flex flex-column justify-content-center w-auto align-items-center">
-                                <div
-                                    class="cinza m-2 container mw-auto rounded-5"><input
-                                      class=""   type="text" id="lugar1" name="lugar1"
-                                        placeholder="X"></div>
-                                <div class="cinza m-2 container mw-auto"><input
-                                       class=""  type="text" id="lugar1" name="lugar1"
-                                        placeholder="X"></div>
-                                <div class="cinza m-2 container mw-auto"><input
-                                      class=""  type="text" id="lugar1" name="lugar1"
-                                        placeholder="X"></div>
-                                <div class="cinza m-2 container mw-auto"><input
-                                      class=""  type="text" id="lugar1" name="lugar1"
-                                        placeholder="X"></div>
-                                <div class="cinza m-2 container mw-auto"><input
-                                      class=""  type="text" id="lugar1" name="lugar1"
-                                        placeholder="X"></div>
+                                
+                                <div class="cinza m-2 container mw-auto rounded-5">
+                                    <label for="cad_1" class="text-white mb-1">Nome completo</label>
+                                    <input class="" type="text"id="cad_1" name="cad_1" placeholder="X"></div>
+                                <div class="cinza m-2 container mw-auto">
+                                    <label for="cad_2" class="text-white mb-1">Email</label>
+                                    <input class="" type="text" id="cad_2"name="cad_2" placeholder="X"></div>
+                                <div class="cinza m-2 container mw-auto">
+                                    <label for="cad_3" class="text-white mb-1">CPF</label>
+                                    <input class="" type="text" id="cad_3" name="cad_3" placeholder="X"></div>
+                                <div class="cinza m-2 container mw-auto">
+                                    <label for="cad_4" class="text-white mb-1">Senha</label>
+                                    <input class="" type="password" id="cad_4" name="cad_4" placeholder="X"></div>
+                                <div class="cinza m-2 container mw-auto">
+                                    <label for="cad_5" class="text-white mb-1">Confirmar Senha</label>
+                                    <input class="" type="password" id="cad_5" name="cad_5" placeholder="X"></div>
+                                
                             </div>
                             <div class="justify-content-center d-flex align-items-center">
-                                <button
-                                    class="botao justify-content-center align-items-center d-flex w-50 rounded-3 "
-                                    type="submit">
+                                <button class="botao justify-content-center align-items-center d-flex w-50 rounded-3 "
+                                    type="submit" id="botaoCriar">
                                     <p>Cadastrar</p>
                                 </button>
                             </div>
-                             <p class="text-white pointer d-flex justify-content-center align-items-center" id="alternar_criar">Já possui uma conta?</p>
-                        </div>
+                            <p class="text-white pointer d-flex justify-content-center align-items-center"
+                                id="alternar_criar">Já possui uma conta?</p>
+                    </div>
                     </form>
 
                 </div>
-                </div>
-            </div>
-            <div
-                class="branca d-flex container w-100 justify-content-center align-items-center p-2 h-100">
-                <div class="insira w-auto h-auto p-5 shadow d-flex flex-wrap">
-                    <p class="texto fs-1 d-flex align-self-center py-5 ">Insira suas informações para criar sua conta</p>
-                    </div>
-                </div>
             </div>
         </div>
-        <script src="/Frontend/assets/js/login.js"></script>
-    </body>
-    
+        <div class="branca d-flex container w-100 justify-content-center align-items-center p-2 h-100">
+            <div class="insira w-auto h-auto p-5 shadow d-flex flex-wrap">
+                <p class="texto fs-1 d-flex align-self-center py-5 ">Insira suas informações para criar sua conta</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="assets/js/login.js"></script>
+</body>
+
 </html>

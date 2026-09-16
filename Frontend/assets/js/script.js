@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', async function carregarProdutos() {
     const containerProdutos = document.getElementById('produtos');
     
-    const conexao = await fetch('http://localhost/PRI/Backend/src/routes/api.php?classe=produtos');
+    const conexao = await fetch('/PRI/Backend/src/routes/api.php?classe=produtos');
     const listaProdutos = await conexao.json();
 
     listaProdutos.forEach(produto => {
         containerProdutos.innerHTML += `
             <div class="miniquad" data-id="${produto.id}">
-                <img class="imgprod" src="${produto.imagem || 'assets/img/no-image.png'}" alt="${produto.nome}">
+                <img class="imgprod" src="${produto.imagem}" alt="${produto.nome}">
                 <div class="nome"><strong>${produto.nome}</strong></div>
                 <div class="preco">R$${produto.preco}</div>
             </div>
@@ -23,4 +23,18 @@ document.addEventListener('DOMContentLoaded', async function carregarProdutos() 
             }
         }
     });
-});
+
+
+})
+
+document.addEventListener('DOMContentLoaded', (e) => {
+const nomeUsuario = localStorage.getItem('usuario_nome');
+    const login = document.getElementById('login');
+    if (nomeUsuario) {
+        login.textContent = `${nomeUsuario}`;
+
+        login.addEventListener('click', (e) => {
+            window.location.href = 'http://localhost/PRI/Frontend/pages/dashboard.html';
+        });
+    } 
+})

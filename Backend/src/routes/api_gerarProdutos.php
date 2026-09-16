@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/../config/database.php';
 $id = $_GET['id'];
 $id = (int)$id;
 $sql = "SELECT * FROM produtos WHERE id = " . $id;
