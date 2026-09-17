@@ -14,5 +14,8 @@ switch($requisicao){
     case 'inserirUsuario':
         require_once __DIR__ .  '/api_inserirUsuario.php';
         break;
+    case 'fazerLogin':
+        require_once __DIR__ . '/api_fazerLogin.php';
+        break;
 }
 ?>
