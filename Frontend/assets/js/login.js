@@ -1,5 +1,5 @@
 const preencher_conta = document.getElementById('preencher_conta');
-let estado_preencher = 1;
+let estado_preencher = 2;
 
 preencher_conta.addEventListener('click', (e) => {
     const botaoAlternar = e.target.closest('#alternar_criar');
@@ -49,10 +49,12 @@ preencher_conta.addEventListener('click', (e) => {
                         <form id="form-login">
                             <div class="d-flex flex-column justify-content-center w-auto align-items-center">
                                 <div class="cinza m-2 container mw-auto rounded-5">
-                                    <input type="text" id="log_1" placeholder="X">
+                                     <label for="log_1" class="text-white mb-1">Email</label>
+                                    <input type="text" id="log_1" placeholder="X" name="log_1">
                                 </div>
                                 <div class="cinza m-2 container mw-auto">
-                                    <input type="text" id="log_2" placeholder="X">
+                                     <label for="log_2" class="text-white mb-1">Senha</label>
+                                    <input type="text" id="log_2" placeholder="X" name="log_2">
                                 </div>
                             </div>
                             <div class="justify-content-center d-flex align-items-center">
@@ -69,7 +71,7 @@ preencher_conta.addEventListener('click', (e) => {
     }
 });
 
-// Usando delegação de eventos para escutar o submit do cadastro dinâmico
+
 document.addEventListener('submit', async (e) => {
     if (e.target && e.target.id === 'form-cadastro') {
         e.preventDefault();
@@ -116,6 +118,33 @@ document.addEventListener('submit', async (e) => {
             window.location.href = '/PRI/Frontend/index.html';
         } else {
             alert('Erro ao realizar o cadastro.');
+        }
+    }
+
+    if(e.target && e.target.id === 'form-login'){
+        e.preventDefault()
+
+        const DadosLogin = {
+            email : document.getElementById('log_1').value,
+            senha : document.getElementById('log_2').value
+        }
+
+        const fazerLogin = await fetch('/PRI/Backend/src/routes/api.php?classe=fazerLogin', {
+            method : 'POST',
+            headers : { 'Content-Type' : 'application/json' },
+            body : JSON.stringify(DadosLogin)
+        })
+
+        const respostaLogin = await fazerLogin.json()
+
+        if(respostaLogin.success){
+            alert("Login realziado com sucesso!")
+            localStorage.setItem('usuario_nome', respostaLogin.nome)
+            window.location.href = '/PRI/Frontend/index.html'
+        } else {
+            alert('Erro ao realizar o login.')
+            alert(respostaLogin.mensagem)
+            alert(respostaLogin.erro_bd)
         }
     }
 });
