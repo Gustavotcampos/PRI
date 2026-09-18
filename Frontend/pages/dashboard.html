@@ -13,188 +13,129 @@
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-            body {
-                padding: 0;
+            html,body {
                 margin: 0;
-                width: 100%;
                 height: 100%;
                 background-color: purple;
             }
-            .agrupa {
-                background-color: white;
-                border: solid;
-                border-width: 3px;
-                border-color: black;
-                justify-content: space-between;
-                height: 100%;
 
+            .agrupa {
                 background-color: rgb(114, 11, 102);
-                gap: 2.08em;
             }
+
             .opcoes {
                 background-color: rgb(67, 0, 67);
             }
+
             .opcao {
-                background-color: rgb(168, 6, 133);
-                border-radius: 10px;
-                border-color: black;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                border: solid;
-                border-width: 1px;
+               color: white;
+               font-family: "Roboto", sans-serif;;
             }
+
             .opcao:hover {
-                background-color: rgb(117, 5, 92);
+                color: rgb(249, 9, 221);
                 cursor: pointer;
             }
+
             .branco {
                 color: white;
                 font-family: "Roboto", sans-serif;
             }
+
+            .preencher{
+                background-color: aliceblue;
+                border-radius: 5px;
+            }
+
+            .Alterar{
+                border: solid 2px rgb(183, 81, 183);
+                border-radius: 15px;
+            }
+
+            .Alterar:hover{
+                background-color:  rgb(135, 58, 135);;
+                cursor: pointer;
+                color: white;
+            }
+            span{
+                font-size: 12px;
+                color: blueviolet;
+            }
         </style>
     </head>
-    <body>
-        <div>
-            <div class="agrupa d-flex mw-auto mh-auto flex-wrap">
-                <div
-                    class="opcoes flex-fill p-5 mw-auto mh-auto d-flex justify-content-center align-items-center flex-column"
-                >
-                    <div class="opcao container p-1 m-2 mb-2">
-                        <div class="branco">XXXXX</div>
-                    </div>
-                    <div class="opcao container p-1 m-2 mb-2">
-                        <div class="branco">XXXXX</div>
-                    </div>
-                    <div class="opcao container p-1 m-2 mb-2">
-                        <div class="branco">XXXXX</div>
-                    </div>
-                    <div class="opcao container p-1 m-2 mb-2">
-                        <div class="branco">XXXXX</div>
-                    </div>
-                    <div class="opcao container p-1 m-2 mb-2">
-                        <div class="branco">XXXXX</div>
-                    </div>
+<body>
+    <div class="agrupa d-flex w-100 h-100 justify-content-start">
+        <div class="opcoes p-3 mw-auto mh-100 d-flex flex-column">
+
+            <div class="opcao container p-1 m-2 mb-2">
+                <div>XXXXX</div>
+            </div>
+
+            <div class="opcao container p-1 m-2 mb-2">
+                <div>XXXXX</div>
+            </div>
+
+            <div class="opcao container p-1 m-2 mb-2">
+                <div>XXXXX</div>
+            </div>
+                    
+        </div>
+
+        <div class="info m-1 d-flex w-100 mh-auto flex-column align-self-center">
+            <div class="branco flex-wrap d-flex justify-content-start flex-column">
+                <h1>Minha conta</h1>   
+                Gerencie suas informações e mantenha seu cadastro sempre atualizado
+            </div>
+            
+            <br>
+
+            <div class="preencher w-auto mh-auto m-1 p-1 flex-fill d-flex justify-content-center flex-wrap flex-column">
+
+                <div class="w-auto d-flex justify-content-between flex-wrap align-items-center">
+                    <h3 class="d-flex">Informações pessoais</h3>
+                    <div class="Alterar d-flex align-self-center flex-wrap p-2">Alterar informações</div>
                 </div>
-                <div
-                    class="preencher flex-fill d-flex justify-content-center flex-wrap flex-column"
-                >
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
+
+                <div class="d-flex flex-column">
+                    <span>Nome Completo</span>
+                    <div class="d-flex flex-wrap">XXXXXXXXXXXXXXXXXXXXX</div>
                 </div>
-                <div
-                    class="preencher flex-fill d-flex justify-content-center flex-wrap flex-column"
-                >
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
+
+                <div class="d-flex flex-column">
+                    <span>Email</span> 
+                    <div class="d-flex flex-wrap">XXXXXXXXXXXXXXXXXXXXX</div>
                 </div>
-                <div
-                    class="preencher flex-fill d-flex justify-content-center flex-wrap flex-column"
-                >
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
+
+                <div class="d-flex flex-column">
+                    <span>CPF</span> 
+                    <div class="d-flex flex-wrap">XXXXXXXXXXXXXXXXXXXXX</div>
+                </div>       
+
+            </div>
+
+            <div class="preencher w-auto m-1 mh-auto p-1 flex-fill d-flex justify-content-center flex-wrap flex-column">
+                <div class="w-auto d-flex justify-content-between flex-wrap align-items-center">
+                <h3 class="d-flex">Endereço</h3>
+                <div class="Alterar p-2 d-flex align-self-center">Alterar informações</div>
                 </div>
-                <div
-                    class="preencher flex-fill d-flex justify-content-center flex-wrap flex-column"
-                >
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
-                    <input
-                        type="text"
-                        placeholder="XXXXXX"
-                        class="mw-auto m-4"
-                    />
+                <div class="d-flex flex-column">
+                    <span>Rua</span>
+                    <div class="d-flex flex-wrap">XXXXXXXXXXXXXXXXXXXXX</div>
+                </div>
+                <div class="d-flex flex-column">
+                    <span>Bairro</span>
+                    <div class="d-flex flex-wrap">XXXXXXXXXXXXXXXXXXXXX</div>
+                </div>
+                <div class="d-flex flex-column">
+                    <span>Cidade</span>
+                    <div class="d-flex flex-wrap">XXXXXXXXXXXXXXXXXXXXX</div>
+                </div>
+                <div class="d-flex flex-column">
+                    <span>CEP</span>
+                    <div class="d-flex flex-wrap">XXXXXXXXXXXXXXXXXXXXX</div>
                 </div>
             </div>
-            <button class="button">Salvar</button>
-            <button class="button">Excluir</button>
         </div>
-    </body>
+    </div>
+</body>
 </html>
